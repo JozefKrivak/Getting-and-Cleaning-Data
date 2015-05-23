@@ -51,5 +51,5 @@ a vector of features was obtained by calculating variables from the time and fre
 - File tidydata.txt will be created on working directory
  
 #analyze.R
-The step by step description of the script can be found in the script
-
+The step by step description of the script can be found in the script.
+There is no need to download the source files from provided page, the script will do it for you.
