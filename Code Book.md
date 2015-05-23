@@ -3,9 +3,10 @@
 Describes the source data, their transformation from downloaded files to tidy data set.
 
 #Data source
-Link for the data:
+- Link for the data:
   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-Main site with the data set:
+
+- Main site with the data set:
   http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
   
 #Source files information
@@ -23,3 +24,32 @@ The sensor acceleration signal, which has gravitational and body motion componen
 a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to
 have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window,
 a vector of features was obtained by calculating variables from the time and frequency domain.
+
+#Files needed from data source
+- 'features.txt': List of all features.
+- 'activity_labels.txt': Links the class labels with their activity name.
+- 'train/X_train.txt': Training set.
+- 'train/y_train.txt': Training labels.
+- 'train/subject_train.txt': Each row identifies the subject who performed the
+    activity for each window sample. Its range is from 1 to 30.
+- 'test/X_test.txt': Test set.
+- 'test/y_test.txt': Test labels.
+- 'test/subject_test.txt': Each row identifies the subject who performed the 
+    activity for each window sample. Its range is from 1 to 30.
+
+#Goals
+- Merges the training and the test sets to create one data set.
+- Extracts only the measurements on the mean and standard deviation for each measurement.
+- Uses descriptive activity names to name the activities in the data set
+- Appropriately labels the data set with descriptive activity names.
+- Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+#Steps to meet the goals
+- To prepared folder on your local disk download the analyze.R file from repository
+- Open Rstudio, set the working directory to this folder
+- Run the script with source() function
+- File tidydata.txt will be created on working directory
+ 
+#analyze.R
+The step by step description of the script can be found in the script
+
